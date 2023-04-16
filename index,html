@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividade Prática - Tabelas HTML</title>
+    <style>
+      .square {
+        width: auto;
+        display: inline-block;
+        margin: 1rem;
+        border-spacing: 0;
+        border: 1px solid black;
+      }
+      .square td {
+        width: 50px;
+        height: 50px;
+        border: 1px solid black;
+      }
+      .square_at1 {
+        width: auto;
+        display: inline-block;
+        margin: 1rem;
+        border-spacing: 0;
+        border: 1px solid black;
+      }
+      .square_at1 td {
+        width: 200px;
+        height: 50px;
+        border: 1px solid black;
+      }
+      .square_at1center {
+        text-align: center;
+      }
+      .square_at1end {
+        text-align: end;
+      }
+      .square_at2 {
+        width: auto;
+        display: inline-block;
+        margin: 1rem;
+        border-spacing: 0;
+        border: 1px solid black;
+      }
+      .square_at2 td {
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h2>Atividade 1</h2>
+      <table class="square_at1">
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+        <tr class="square_at1center">
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+        </tr>
+        <tr class="square_at1end">
+          <td>7</td>
+          <td>8</td>
+          <td>9</td>
+        </tr>
+      </table>
+      <table class="square_at1">
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+        <tr class="square_at1center">
+          <td colspan="3">4</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>8</td>
+          <td>9</td>
+        </tr>
+      </table>
+      <table class="square_at1">
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td rowspan="3" style="text-align: center">3</td>
+        </tr>
+        <tr class="square_at1center">
+          <td colspan="2">4</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>6</td>
+        </tr>
+      </table>
+      <h2>Atividade 2</h2>
+      <table class="square_at2" style="text-align: center">
+        <tr>
+          <td colspan="2" style="text-align: center">Topo</td>
+        </tr>
+        <tr>
+          <td>Menu</td>
+          <td>Conteúdo</td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align: center">Rodapé</td>
+        </tr>
+      </table>
+      <h2>Atividade 3</h2>
+      <table class="square">
+        <tr>
+          <td colspan="3"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+      <table class="square">
+        <tr>
+          <td rowspan="3"></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+      <table class="square">
+        <tr>
+          <td colspan="5"></td>
+        </tr>
+        <tr>
+          <td rowspan="4"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td rowspan="2"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="3"></td>
+          <td></td>
+        </tr>
+      </table>
+    </main>
+  </body>
+</html>
